@@ -1,0 +1,97 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s all;
+    &.active {
+        left: 0; 
+        visibility: visible;
+        opacity: 1; 
+    }
+    &__block {
+        position: relative;
+        width: 345px;
+        height: 100%;
+        padding-top: 140px;
+        padding-left: 40px;
+        transition: 0.5s all;
+        background: $main-color;
+        z-index: 10;
+    }
+    &__close {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        cursor: pointer;
+    }
+    &__social {
+        width: 90px;
+        height: 20px;
+        position: absolute;
+        bottom: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+        justify-content: space-between;
+        img {
+            transform: rotate(90deg);
+        } 
+    }
+    &__links {
+        &:hover{
+            transform: rotate(-45deg);
+            transition: 0.5s all;
+            }
+    }
+    &__list {
+        list-style-type: none;
+        position: absolute;
+        padding-left: 35px;
+        width: 220px;
+        height: 285px;
+    }
+    &__link {
+        position: relative;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-bottom: 15px;
+            &:before {               
+                content: '';
+                position: absolute;
+                width: 15px;
+                height: 15px;
+                border: 1px solid #000000;
+                border-radius: 100%;
+                left: -30px;
+                top: 10px;
+                transition: 0.5s all;
+        }
+        &:hover {
+            color: rgb(143, 145, 248);
+            text-shadow: 6px 3px 20px #738bb1;
+            &::before {
+                background: #ffffff;
+                border: none;
+            }
+        }
+        a {
+            text-decoration: none;
+            color: #FFFFFF;
+        }
+    } 
+    &__overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(255, 255, 255, 0.75);
+    }
+}

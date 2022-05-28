@@ -1,0 +1,51 @@
+.promo {
+    position: relative;
+    min-height: 100vh;    /* (означает что вся секция будет такая же как и любой екран смотрящего) */
+    background: url('../img/main_bg.jpg') no-repeat 50%/cover;
+    padding-top: 205px;
+    &__title {
+        width: 530px;
+        margin-top: 10px;
+    }
+    &__btns {
+        margin-top: 25px;
+        display: flex;
+        width: 250px;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        color: #000000;
+        &:hover {
+            color: #000000;
+            text-decoration: none;
+        }
+    }
+}
+
+.hamburger {
+    position: absolute;
+    display: flex;
+    top: 20px;
+    right: 30px;
+    width: 36px;
+    height: 21px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background: #151812;
+    }
+    span.long {
+        width: 36px;
+        height: 3px;
+        background: #151812;
+    }
+}
+
