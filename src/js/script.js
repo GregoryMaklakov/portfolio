@@ -13,3 +13,14 @@ closeElem.addEventListener('click', () => {
     
 });
 
+//создание елементов шкала
+
+const percents = document.querySelectorAll('.skills__percent'),
+    mains = document.querySelectorAll('.skills__main');
+
+    percents.forEach((item, i) => {
+        mains[i].style.width = item.innerHTML;
+});
+
+
+

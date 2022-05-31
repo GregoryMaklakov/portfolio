@@ -10,6 +10,11 @@
 @import 'blocks/sidepanel';
 @import 'blocks/menu';
 @import 'blocks/about';
+@import 'blocks/resume';
+@import 'blocks/used';
+@import 'blocks/portfolio';
+@import 'blocks/price';
+@import 'blocks/contacts';
 
 * {
     font-family: 'Poppins', sans-serif;
@@ -20,4 +25,11 @@
 .container {
     width: 1140px;
     margin: 0 auto;
+}
+
+.divider {
+    width: 60px;
+    height: 0px;
+    border: 1px solid $main-color;
+    margin: 25px auto 0 auto;
 }

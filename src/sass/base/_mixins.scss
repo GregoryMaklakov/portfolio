@@ -16,11 +16,12 @@
     &:before {
         content: '';
         position: absolute;
-        width: 36px;
-        height: 36px;
+        width: 15px;
+        left: -25px;
+        top: 2px;
+        height: 15px;
         background: $main-color;
         border-radius: 100%;
         z-index: -1;
-        left: -50px;
     }
 }
