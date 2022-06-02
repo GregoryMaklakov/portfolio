@@ -32,9 +32,10 @@
 .skills {
     margin-top: 120px;
     display: grid;
-    grid-template-columns: repeat(3, 350px);
+    grid-template-columns: repeat(3, 300px);
     grid-template-rows: repeat(2, 70px);
     gap: 45px 30px;
+    justify-content: center;
     &__wr {
         display: flex;
         justify-content: space-between;
