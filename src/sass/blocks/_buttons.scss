@@ -18,3 +18,31 @@
         border: none;
     }
 }
+
+.button_main, .button_submit {
+    margin-top: 20px;
+    height: 45px;
+    background: $main-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    padding: 0;
+    text-transform: uppercase;
+    border: none;
+    font-size: 14px;
+    padding: 12px 25px;
+    &:hover {
+        box-shadow: 6px 3px 20px $main-color;
+        border: none;
+    }
+}
+
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    width: 40px;
+    height: 40px;
+    right: 40px;
+    img {
+        width: 100%;
+    }
+}

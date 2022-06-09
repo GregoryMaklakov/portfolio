@@ -150,6 +150,26 @@
 }
 
 @media (max-width: 576px) {
+    .overlay {
+        .modal {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            width: 280px;
+            min-height: 184px;
+            background-color: #f2f2f2;
+            padding: 10px;
+        }
+        .feed-form {
+            width: 260px;
+        }
+        .modal__close {
+            top: -25px;
+            right: -5px;
+        }
+    }
     .container {
         width: 100%;
         padding: 0 10px;
